@@ -1,0 +1,7 @@
+{
+	"name": "advanced_technology",
+	"version": "0.0.1",
+	"label": "Advanced Technology and Science",
+	"description": "Pushing Technology Research to the edge...",
+    "dependencies": ["0ad=0.0.23"]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wallset">
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Metal reinforced Stone Wall</SpecificName>
+	<RequiredTechnology>phase_republic</RequiredTechnology>
+  </Identity>
+  <WallSet>
+    <Templates>
+      <Tower>structures/wall_strong_tower</Tower>
+      <Gate>structures/wall_strong_gate</Gate>
+      <WallLong>structures/wall_strong_long</WallLong>
+      <WallMedium>structures/wall_strong_medium</WallMedium>
+      <WallShort>structures/wall_strong_short</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

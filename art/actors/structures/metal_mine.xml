@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+  
+  <castshadow/>
+  
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>structural/metal_mine.dae</mesh>
+	  
+	  <props>
+        <prop actor="structures/metal_mine_rocks.xml" attachpoint="root"/>
+      </props>
+	  
+      <textures>
+	    <texture file="structural/rome_struct_2.png" name="baseTex"/>
+	    <texture file="structural/rome_struct_2_norm.png" name="normTex"/>
+	    <texture file="structural/rome_struct_2_spec.png" name="specTex"/>
+	    <texture file="structural/ao/rome_storehouse.png" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+
+</actor>

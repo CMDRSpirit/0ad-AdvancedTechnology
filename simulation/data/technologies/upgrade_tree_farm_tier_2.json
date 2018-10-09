@@ -1,0 +1,14 @@
+{
+	"genericName": "Advanced Forestry (Tier II)",
+	"description": "Advances in Forestry",
+	"cost": { "food": 50, "wood": 100, "stone": 50, "metal": 0 },
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Requires City Phase",
+	"icon": "upgrade_tier_2.png",
+	"researchTime": 60,
+	"tooltip": "Advances in Tree Forestry, where Gatherers can chop down trees 25% faster.",
+	"modifications": [
+		{ "value": "ResourceSupply/DiminishingReturns", "multiply": 1.25, "affects": "TreeField" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

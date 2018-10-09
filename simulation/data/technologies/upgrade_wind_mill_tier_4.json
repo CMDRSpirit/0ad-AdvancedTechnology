@@ -1,0 +1,15 @@
+{
+	"genericName": "Refined Shafts (Tier IV)",
+	"description": "Advances in Energy Generation",
+	"cost": { "food": 200, "wood": 300, "stone": 600, "metal": 2000 },
+	"requirements": {"tech": "phase_republic"},
+	"requirementsTooltip": "Requires Republic Phase",
+	"supersedes": "upgrade_wind_mill_tier_3",
+	"icon": "upgrade_tier_4.png",
+	"researchTime": 60,
+	"tooltip": "Advances in Energy Generation, where Generators produce 25% more Mechanical Energy",
+	"modifications": [
+		{ "value": "ResourceGenerator/Rates/mechanical_energy", "multiply": 1.25, "affects": "EnergyGenerator" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,12 @@
+<skeletons>
+	<standard_skeleton title="Rotor" id="Rotor">
+		<bone name="origin">
+		</bone>
+	</standard_skeleton>
+	
+	<skeleton title="Rotor" target="Rotor">
+	<identifier><root>Armature</root></identifier>
+		<bone name="origin"><target>origin</target>
+		</bone>
+	</skeleton>
+</skeletons>

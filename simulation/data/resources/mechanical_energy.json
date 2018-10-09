@@ -1,0 +1,11 @@
+{
+	"code": "mechanical_energy",
+	"name": "Mechanical Energy",
+	"description": "Increased by building Generators powered by Wind or Water.",
+	"order": 5,
+	"subtypes": {
+		"energy": "Energy"
+	},
+	"truePrice": 250,
+	"aiAnalysisInfluenceGroup": "ignore"
+}

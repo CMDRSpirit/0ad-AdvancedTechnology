@@ -1,0 +1,11 @@
+{
+	"genericName": "Metalurgy",
+	"description": "Advances in working with metals.",
+	"cost": { "food": 25, "wood": 50, "stone": 50, "metal": 150 },
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Requires City Phase",
+	"icon": "upgrade_tier_2.png",
+	"researchTime": 60,
+	"tooltip": "Advances in working with metals, which opens up new building capabilities.",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

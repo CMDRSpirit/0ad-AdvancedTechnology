@@ -1,0 +1,11 @@
+{
+	"code": "chemicals",
+	"name": "Chemicals",
+	"description": "Don't let your kids near them...",
+	"order": 6,
+	"subtypes": {
+		"powder": "Powder"
+	},
+	"truePrice": 250,
+	"aiAnalysisInfluenceGroup": "ignore"
+}

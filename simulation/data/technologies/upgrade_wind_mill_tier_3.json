@@ -1,0 +1,15 @@
+{
+	"genericName": "High Performance Gears (Tier III)",
+	"description": "Advances in Energy Generation",
+	"cost": { "food": 100, "wood": 200, "stone": 300, "metal": 1000 },
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Requires City Phase",
+	"supersedes": "upgrade_wind_mill_tier_2",
+	"icon": "upgrade_tier_3.png",
+	"researchTime": 60,
+	"tooltip": "Advances in Energy Generation, where Generators produce 50% more Mechanical Energy",
+	"modifications": [
+		{ "value": "ResourceGenerator/Rates/mechanical_energy", "multiply": 1.5, "affects": "EnergyGenerator" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

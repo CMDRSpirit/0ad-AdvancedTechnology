@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource">
+  <Armour>
+    <Hack>15</Hack>
+    <Pierce>40</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <BuildRestrictions>
+    <Category>TreeField</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28.0" depth="28.0"/>
+    <Height>16.0</Height>
+  </Footprint>
+  <Health>
+    <Max>250</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Field</GenericName>
+    <VisibleClasses datatype="tokens">TreeField</VisibleClasses>
+    <Tooltip>Harvest wood from regrowing trees...</Tooltip>
+    <Icon>def_icon.png</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <food>0</food>
+    <wood>100</wood>
+  </Loot>
+  <Minimap>
+    <Color r="119" g="82" b="46"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="22.0" depth="22.0"/>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+  </Obstruction>
+  <ProductionQueue>
+	<BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+		upgrade_tree_farm_tier_2
+		upgrade_tree_farm_tier_3
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable=""/>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Amount>Infinity</Amount>
+    <Type>wood.tree</Type>
+    <MaxGatherers>5</MaxGatherers>
+    <DiminishingReturns>0.90</DiminishingReturns>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_field.xml</select>
+      <constructed>interface/complete/building/complete_field.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/plot_field_tree.xml</Actor>
+    <FoundationActor>structures/plot_field_found.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>

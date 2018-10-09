@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource_mine">
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Automated Metal Mine</SpecificName>
+	<Icon>structures/auto_mine.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/metal_mine.xml</Actor>
+  </VisualActor>
+</Entity>

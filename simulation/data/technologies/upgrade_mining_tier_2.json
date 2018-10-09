@@ -1,0 +1,16 @@
+{
+	"genericName": "Multi Drilling (Tier II)",
+	"description": "Advances in Automated Mining",
+	"cost": { "food": 50, "wood": 100, "stone": 150, "metal": 500 },
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Requires City Phase",
+	"icon": "upgrade_tier_2.png",
+	"researchTime": 60,
+	"tooltip": "Advances in Automated Mining, where Mines extract 50% more resources, but also use 25% more energy.",
+	"modifications": [
+		{ "value": "ResourceGenerator/Rates/stone", "multiply": 1.5, "affects": "AutoMine" },
+		{ "value": "ResourceGenerator/Rates/metal", "multiply": 1.5, "affects": "AutoMine" },
+		{ "value": "ResourceGenerator/Rates/mechanical_energy", "multiply": 1.25, "affects": "AutoMine" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

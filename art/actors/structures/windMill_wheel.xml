@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+  
+  <castshadow/>
+  
+  <group>
+    <variant frequency="100" name="Base">
+      <animations>
+		<animation file="mechanical/wind_mill_rotate.dae" name="idle" speed="64"/>
+	  </animations>
+	  
+	  <mesh>structural/windMill_wheel.dae</mesh>
+	  
+      <textures><texture file="props/wrld_wood_1.dds" name="baseTex"/></textures>
+
+    </variant>
+  </group>
+
+</actor>

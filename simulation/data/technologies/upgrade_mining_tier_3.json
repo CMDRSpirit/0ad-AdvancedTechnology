@@ -1,0 +1,17 @@
+{
+	"genericName": "Automated Tunneling (Tier III)",
+	"description": "Advances in Automated Mining",
+	"cost": { "food": 100, "wood": 200, "stone": 300, "metal": 1000 },
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Requires City Phase",
+	"supersedes": "upgrade_mining_tier_2",
+	"icon": "upgrade_tier_3.png",
+	"researchTime": 60,
+	"tooltip": "Advances in Automated Mining, where Mines extract 25% more resources, but also use 30% more energy.",
+	"modifications": [
+		{ "value": "ResourceGenerator/Rates/stone", "multiply": 1.25, "affects": "AutoMine" },
+		{ "value": "ResourceGenerator/Rates/metal", "multiply": 1.25, "affects": "AutoMine" },
+		{ "value": "ResourceGenerator/Rates/mechanical_energy", "multiply": 1.3, "affects": "AutoMine" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

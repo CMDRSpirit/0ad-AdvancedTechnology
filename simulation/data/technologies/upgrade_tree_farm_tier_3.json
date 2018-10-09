@@ -1,0 +1,15 @@
+{
+	"genericName": "Ultimate Forestry (Tier III)",
+	"description": "Advances in Forestry",
+	"cost": { "food": 100, "wood": 200, "stone": 100, "metal": 0 },
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Requires City Phase",
+	"supersedes": "upgrade_tree_farm_tier_2",
+	"icon": "upgrade_tier_3.png",
+	"researchTime": 60,
+	"tooltip": "Advances in Tree Forestry, where Gatherers can chop down trees 15% faster.",
+	"modifications": [
+		{ "value": "ResourceSupply/DiminishingReturns", "multiply": 1.15, "affects": "TreeField" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

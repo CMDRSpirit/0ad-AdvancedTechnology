@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource">
+  <Armour>
+    <Hack>15</Hack>
+    <Pierce>40</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <BuildRestrictions>
+    <Category>AutoMine</Category>
+	<Distance>
+		<FromClass>AutoMine</FromClass>
+		<MinDistance>100</MinDistance>
+	</Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <wood>100</wood>
+	  <stone>300</stone>
+	  <metal>250</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="20.0" depth="20.0"/>
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>250</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Automated Mine</GenericName>
+    <VisibleClasses datatype="tokens">AutoMine</VisibleClasses>
+    <Tooltip>Harvest metals and stone from the deep. Extraction Rates: 3 stones/s, 1 metal/s. Energy draw: 5kw</Tooltip>
+    <Icon>def_icon.png</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <food>0</food>
+    <wood>50</wood>
+	<stone>150</stone>
+	<metal>125</metal>
+  </Loot>
+  <Minimap>
+    <Color r="119" g="119" b="119"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <ProductionQueue>
+	<BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+		upgrade_mining_tier_2
+		upgrade_mining_tier_3
+		upgrade_mining_tier_4
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable=""/>
+  <ResourceGenerator>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>3.0</stone>
+      <metal>1.0</metal>
+	  <mechanical_energy>-5.0</mechanical_energy>
+    </Rates>
+	<UnitsToFunction>1</UnitsToFunction>
+    <Interval>1000</Interval>
+  </ResourceGenerator>
+  <GarrisonHolder>
+    <Max>1</Max>
+    <BuffHeal>0</BuffHeal>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry</List>
+    <LoadingRange>1</LoadingRange>
+  </GarrisonHolder>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_storehouse.xml</select>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/metal_mine.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>

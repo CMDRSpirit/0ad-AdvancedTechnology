@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_strong_medium">
+  <Footprint>
+    <Square width="26.0" depth="9.0"/>
+    <Height>16.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>pers</Civ>
+    <SelectionGroupName>structures/pers_wallset_stone</SelectionGroupName>
+    <SpecificName>Metal reinforced Stone Wall</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="7.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/wall_strong_medium.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>24.0</Length>
+  </WallPiece>
+</Entity>

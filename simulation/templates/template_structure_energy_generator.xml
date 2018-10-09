@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource">
+  <Armour>
+    <Hack>15</Hack>
+    <Pierce>40</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <BuildRestrictions>
+    <Category>EnergyGenerator</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <wood>150</wood>
+	  <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="16.0" depth="16.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <Max>250</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Energy Generator</GenericName>
+    <VisibleClasses datatype="tokens">EnergyGenerator</VisibleClasses>
+    <Tooltip>Generates Mechanical Energy. Rate: 1kW</Tooltip>
+    <Icon>def_icon.png</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <food>0</food>
+    <wood>75</wood>
+	<stone>50</stone>
+	<metal>0</metal>
+  </Loot>
+  <Minimap>
+    <Color r="119" g="119" b="119"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="16.0" depth="16.0"/>
+  </Obstruction>
+  <ProductionQueue>
+  <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+		upgrade_wind_mill_tier_2
+		upgrade_wind_mill_tier_3
+		upgrade_wind_mill_tier_4
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable=""/>
+  <ResourceGenerator>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+	  <mechanical_energy>1.0</mechanical_energy>
+    </Rates>
+	<MaxCapacity>
+	  <mechanical_energy>300.0</mechanical_energy>
+	</MaxCapacity>
+    <Interval>1000</Interval>
+  </ResourceGenerator>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_field.xml</select>
+      <constructed>interface/complete/building/complete_field.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/metal_mine.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>

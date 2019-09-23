@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Anno1404 - Random",
+		"Script" : "anno1404rand.js",
+		"Description" : "Players start in the middle of the ocean ready to explore and colonise new islands.",
+		"Keywords": ["naval"],
+		"Preview" : "islands.png",
+		"SupportedBiomes": "generic/mediterranean",
+		"CircularMap" : true
+	}
+}
